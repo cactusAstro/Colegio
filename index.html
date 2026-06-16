@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi recorrido como alumno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Desplazamiento suave al pulsar los enlaces del menú */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* La barra es fija arriba: dejamos hueco para que no tape el título al saltar */
+        :target {
+            scroll-margin-top: 90px;
+        }
+
+        /* Imágenes de las cartas: misma altura y sin deformarse */
+        .card-img-top {
+            object-fit: contain;
+            height: 260px;
+            background-color: #f1f3f5;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        /* Cartas redondeadas con un pequeño efecto al pasar el ratón por encima */
+        .card {
+            border-radius: 10px;
+            transition: transform .2s ease, box-shadow .2s ease;
+            border: 2px solid black;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (fija arriba, con enlaces que llevan a cada sección) -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top p-2" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio"
+                style="font-weight: bolder; font-family: 'Times New Roman', Times, serif; font-size: 30px;">El
+                Colegio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end p-2" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#infantil">Infantil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#primaria">Primaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#eso">ESO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#grado-medio">Grado medio / FP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container px-5 py-5" id="inicio">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 col-lg-6">
+                <img src="https://www.lasalleteruel.es/wp-content/uploads/2020/06/colegio.jpg"
+                    class="d-block mx-lg-auto img-fluid rounded-3 shadow" alt="colegio" width="700" loading="lazy">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h1 class="display-3 fw-bold text-body-emphasis lh-1 mb-3">Mis títulos como alumno</h1>
+                <p class="lead">En total he pasado por 4 etapas en mi vida:</p>
+                <ul>
+                    <li>Infantil: mis primeros años.</li>
+                    <li>Primaria: eramos todos autistas</li>
+                    <li>ESO: Ojalá nos hubieran confinado más tiempo para jugar más</li>
+                    <li>Grado medio: aquí ya se nota quién viene a estudiar y quién no.</li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="#infantil" class="btn btn-primary btn-lg px-4">Ver mi recorrido</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infantil -->
+    <div class="container text-center" id="infantil">
+        <div class="row g-4">
+            <div class="col-12">
+                <h2 class="display-6 fw-bold mb-2">INFANTIL</h2>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2019/06/DSCN9876-S.jpg"
+                        class="card-img-top" alt="Infantil">
+                    <div class="card-body">
+                        <h5 class="card-title">1ro de infantil</h5>
+                        <p class="card-text">El primer día tuve miedo y la profesora solo gritaba la muy inutil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2022/06/07-1080x576.jpg"
+                        class="card-img-top" alt="Infantil">
+                    <div class="card-body">
+                        <h5 class="card-title">2do de infantil</h5>
+                        <p class="card-text">Más de lo mismo. Solo me gustaba ir a clase por las chuches</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2014/10/La_Salle_1988_6.png"
+                        class="card-img-top" alt="Infantil">
+                    <div class="card-body">
+                        <h5 class="card-title">3ro de infantil</h5>
+                        <p class="card-text">Ya estaba más contento porque solo me quedaba un año de infantil. la
+                            profesora era una gilipollas gritona.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Primaria -->
+    <div class="container text-center mt-5" id="primaria">
+        <div class="row g-4">
+            <div class="col-12">
+                <h2 class="display-6 fw-bold mb-2">PRIMARIA</h2>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2024/10/IMG-20241030-WA0005-1080x675.jpg"
+                        class="card-img-top" alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">1ro de primaria</h5>
+                        <p class="card-text">Muy buena profesora, creo que fue uno de los mejores cursos de todos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2022/06/07-1080x576.jpg"
+                        class="card-img-top" alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">2do de primaria</h5>
+                        <p class="card-text">Igual que primero, pero con algo más de materia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasallevalenciapalma.es/wp-content/uploads/2022/10/IMG_20221014_113027-1-1080x540.jpg"
+                        class="card-img-top" alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">3ro de primaria</h5>
+                        <p class="card-text">El profesor don Julio era de los mejores que tuve y nos daba muchas
+                            chuches.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasallevalenciapalma.es/wp-content/uploads/2024/02/cf63e68c-7cc0-45c1-b10e-54ac5fa653d6-1080x675.webp"
+                        class="card-img-top" alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">4to de primaria</h5>
+                        <p class="card-text">Seguíamos con don Julio. Fue el año de las comuniones y le pedíamos que no
+                            nos mandara deberes los fines de semana por las comuniones</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2020/06/colegio.jpg" class="card-img-top"
+                        alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">5to de primaria</h5>
+                        <p class="card-text">Cambié de profesora y el curso se me hizo más cuesta arriba. Además ese año
+                            un gilipollas me robó una chaqueta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://ecodeteruel.tv/wp-content/uploads/2021/11/NCA1-002.jpg" class="card-img-top"
+                        alt="Primaria">
+                    <div class="card-body">
+                        <h5 class="card-title">6to de primaria</h5>
+                        <p class="card-text">Repetíamos profesora. Ese año muchos gilipollas de clase empezaba a fumar
+                            detras del pabellón</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESO -->
+    <div class="container text-center mt-5" id="eso">
+        <div class="row g-4">
+            <div class="col-12">
+                <h2 class="display-6 fw-bold mb-2">ESO</h2>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2024/10/IMG-20241030-WA0005-1080x675.jpg"
+                        class="card-img-top" alt="ESO">
+                    <div class="card-body">
+                        <h5 class="card-title">1ro de ESO</h5>
+                        <p class="card-text">Curso difícil: me cambiaron de clase y no coincidí con mis amigos, aunque
+                            la tutora era muy buena. Además llegó el confinamiento y estudié desde casa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasalleteruel.es/wp-content/uploads/2022/06/07-1080x576.jpg"
+                        class="card-img-top" alt="ESO">
+                    <div class="card-body">
+                        <h5 class="card-title">2do de ESO</h5>
+                        <p class="card-text">Íbamos con mascarilla a clase. En educación física nos hacian correr con
+                            mascarilla por las cuestas y las escaleras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasallevalenciapalma.es/wp-content/uploads/2022/10/IMG_20221014_113027-1-1080x540.jpg"
+                        class="card-img-top" alt="ESO">
+                    <div class="card-body">
+                        <h5 class="card-title">3ro de ESO</h5>
+                        <p class="card-text">Fue mi mejor curso: saqué un 10 en Física y Química.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://www.lasallevalenciapalma.es/wp-content/uploads/2024/02/cf63e68c-7cc0-45c1-b10e-54ac5fa653d6-1080x675.webp"
+                        class="card-img-top" alt="ESO">
+                    <div class="card-body">
+                        <h5 class="card-title">4to de ESO</h5>
+                        <p class="card-text">Repetí curso en el Chomón. Al principio me costó adaptarme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grado Medio / FP -->
+    <div class="container text-center mt-5" id="grado-medio">
+        <div class="row g-4">
+            <div class="col-12">
+                <h2 class="display-6 fw-bold mb-2">GRADO MEDIO</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="./ajia2.png" class="card-img-top" alt="Grado medio">
+                    <div class="card-body">
+                        <h5 class="card-title">1ro de SMR</h5>
+                        <p class="card-text">Puta mierda. Casi repito curso y el tutor no me ayudo con redes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="./ajia.png" class="card-img-top" alt="Grado medio">
+                    <div class="card-body">
+                        <h5 class="card-title">2do de SMR</h5>
+                        <p class="card-text">Mis padres me dijeron que me iban a comprar un iPhone si sacaba buenas
+                            notas y ahora dicen que no. Me cago en dios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="container text-start mt-5" id="contacto">
+        <div class="row g-4">
+            <div class="col-12 col-lg-6">
+                <h2 class="text-center display-6 fw-bold mb-4">OPINIÓN DE LA WEB</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label fw-bold">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="tunombre@correo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label fw-bold">Asunto del mensaje</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Asunto" aria-label="asunto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fw-bold">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre/s" aria-label="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label fw-bold">Apellidos</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellidos"
+                            aria-label="apellido">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="text-center display-6 fw-bold mb-4">NUESTRO CONTACTO</h2>
+                <p class="fs-5"><i class="bi bi-telephone-fill me-2 text-primary"></i>+34 612 345 678</p>
+                <hr>
+                <p class="fs-5"><i class="bi bi-envelope-fill me-2 text-primary"></i>contacto@elcolegio.com</p>
+                <hr>
+                <p class="fs-5"><i class="bi bi-geo-alt-fill me-2 text-primary"></i>Teruel, España</p>
+                <hr>
+                <p class="fs-5"><i class="bi bi-clock-fill me-2 text-primary"></i>Lunes a viernes, 9:00 - 17:00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white-50 py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2026 El Colegio · Mi recorrido como alumno</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
